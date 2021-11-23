@@ -100,32 +100,50 @@ $(function() {
         })
         /* 推广产品切换*/
     $('.promotion .title ul li').mouseenter(function() {
-            //导航激活类的切换
-            $(this).addClass('active').siblings().removeClass('active')
-                //内容切换
-                //获取对应index
-            var index = $(this).index();
-            //左右移动
-            $('.promotion .promotion-content  .inner-box').animate({
-                'left': -index * 1170
+        //导航激活类的切换
+        $(this).addClass('active').siblings().removeClass('active')
+            //内容切换
+            //获取对应index
+        var index = $(this).index();
+        //左右移动
+        $('.promotion .promotion-content  .inner-box').animate({
+            'left': -index * 1170
+        })
+    })
+
+    /*二维码滑出交互效果*/
+    $('.qr-code .ticket').hover(function() {
+            /*二维码滑出*/
+            $('.qr-code div').stop(true).animate({
+                left: '-100px'
+            })
+        }, function() {
+            /*二维码收回*/
+            $('.qr-code div').stop(true).animate({
+                left: '0px'
             })
         })
-        /*返回顶部*/
-        /*绑定滚动事件 获取距离顶部的位置*/
+        /*顶部搜索框交互*/
     $(document).scroll(function() {
-            /*获取距离顶部的位置*/
+            //获取到顶部的距离
             var topDistance = $('html,body').scrollTop();
-            //判断
             if (topDistance > 500) {
-                $('.backToTop').fadeIn();
+                //如果滚动距离大于500.就滑下来
+                $('.top-search-box').slideDown()
             } else {
-                $('.backToTop').fadeOut();
+                //否则收回去
+                $('.top-search-box').slideUp()
             }
         })
-        //返回顶部(動態添加元素，需要使用事件委託 才能綁定事件)
-    $('body').on('click', '.backToTop', function() {
+        /*楼层跳转*/
+    $('.floor li').click(function() {
+        //获取索引
+        var index = $(this).index();
+        //选中每一个板块到顶部的偏移
+        var topOffset = $('.floorBox').eq(index).offset().top;
+        //让滚动条滚到这个位置
         $('html,body').animate({
-            scrollTop: 0
-        }, 300)
+            scrollTop: topOffset - 50
+        })
     })
 })
