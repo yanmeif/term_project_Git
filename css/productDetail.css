@@ -1,0 +1,117 @@
+.product-detail {
+    height: 500px;
+    margin: 50px auto;
+}
+
+.product-detail .left-box {
+    width: 340px;
+    height: 470px;
+    background-color: #f1f1f1;
+}
+
+.product-detail .left-box h1 {
+    color: rgb(156, 154, 154);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-detail .right-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #ccc;
+}
+
+.product-detail .right-box h1 {
+    font-size: 23px;
+    margin-left: 20px;
+}
+
+.product-detail .right-box h4 {
+    margin-left: 60px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: red;
+}
+
+.product-detail .right-box .price {
+    height: 140px;
+    width: 750px;
+    margin-left: 20px;
+    border: 1px solid #ffff;
+    background-color: rgb(240, 240, 240);
+    color: #ccc;
+}
+
+.product-detail .right-box .price p {
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.product-detail .right-box .price .content {
+    line-height: 50px;
+}
+
+.product-detail .right-box .price .content .eval {
+    width: 140px;
+    line-height: 20px;
+}
+
+.product-detail .right-box .price .content p .ys {
+    color: red;
+}
+
+.product-detail .right-box .price .content p .full {
+    color: #fff;
+    background-color: #ff6700;
+    width: 70px;
+    margin-left: 20px;
+}
+
+.product-detail .right-box .btn {
+    margin-left: 70px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product-detail .right-box .btn button {
+    width: 70px;
+    border: 2px solid #ccc;
+}
+
+.product-detail .right-box .btn button:hover {
+    border: 2px solid #ff6700;
+}
+
+.product-detail .right-box input {
+    width: 120px;
+    text-align: center;
+}
+
+.product-detail .right-box .inp {
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.product-detail .right-box .inp input {
+    width: 30px;
+}
+
+.product-detail .right-box .inp .addshop {
+    width: 170px;
+    height: 40px;
+    margin-left: 20px;
+    background-color: #ff6700;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    color: #fff;
+}
+
+.product-detail .right-box .end {
+    margin-top: 160px;
+    color: rgb(156, 154, 154);
+}
+
+.magnifier-container {
+    /* ！important正无穷 */
+    height: 380px !important;
+}

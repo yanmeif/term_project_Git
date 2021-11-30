@@ -82,36 +82,15 @@ $(function() {
             controlsCurrentColor: "#ff6600", //当前控制按钮的颜色
         })
         /*电子书 tab切换*/
-    $('.ebooks-nav>li').mouseenter(function() {
+    $('.ebooks .top li').mouseenter(function() {
             //导航高亮颜色切换
-            $(this).addClass('active').siblings('li').removeClass('active');
-            //获取index
-            var index = $(this).index();
-            //内容切换
-            $('ebooks-List').eq(index).show().siblings('.ebooks-list').hide();
-        })
-        /*服装tab切换*/
-    $('.clothes .clothes-nav li').mouseenter(function() {
-            //导航切换
             $(this).addClass('active').siblings('li').removeClass('active')
-                //获取索引
+                //获取index
             var index = $(this).index();
-            $('.clothes .clothes-content >.clothes-list').eq(index).show().siblings('.clothes-list').hide();
-        })
-        /* 推广产品切换*/
-    $('.promotion .title ul li').mouseenter(function() {
-        //导航激活类的切换
-        $(this).addClass('active').siblings().removeClass('active')
             //内容切换
-            //获取对应index
-        var index = $(this).index();
-        //左右移动
-        $('.promotion .promotion-content  .inner-box').animate({
-            'left': -index * 1170
+            $('ebooks-list').eq(index).show().siblings('.ebooks-list').hide();
         })
-    })
-
-    /*二维码滑出交互效果*/
+        /*二维码滑出交互效果*/
     $('.qr-code .ticket').hover(function() {
             /*二维码滑出*/
             $('.qr-code div').stop(true).animate({
