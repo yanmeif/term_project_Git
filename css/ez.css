@@ -317,7 +317,7 @@
 }
 
 
-/* 上下滑动*/
+/* 上下滑动
 
 .out-box {
     overflow: hidden;
@@ -331,10 +331,10 @@
 
 .inner-box li {
     margin-top: 30px;
-}
+}*/
 
 
-/*左右滑动的版本
+/*左右滑动的版本*/
 
 .out-box {
     overflow: hidden;
@@ -344,7 +344,7 @@
     width: 4800px;
     position: relative;
     left: 0;
-}*/
+}
 
 .guess-you-like-content li {
     float: left;

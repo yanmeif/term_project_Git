@@ -1,0 +1,32 @@
+/* ================================用户注册================================ */
+
+.register {
+    width: 500px;
+    height: 1000px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.register h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register p {
+    margin-bottom: 20px;
+}
+
+.register p input {
+    width: 200px;
+    height: 20px;
+    outline: none;
+}
+
+.error {
+    color: red;
+}
+
+.error:first-child {
+    border: 1px solid red;
+    color: #333;
+}

@@ -31,30 +31,30 @@ $(function() {
         /*换一批 */
         //定一个索引
         //上下滑动
-    var index = 0;
-    $('.change').click(function() {
-            //自增
-            index++;
-            //边界判断
-            index = index > 2 ? 0 : index;
-            //让里面的inner-box运动
-            $('.inner-box').animate({
-                top: -index * 500
-            })
-        })
-        //     //左右滑动
         // var index = 0;
         // $('.change').click(function() {
-        //     //自增
-        //     index++;
-        //     //边界判断
-        //     // index = index > 3 ? 0 : index;
-        //     //让里面的inner-box运动
-        //     $('.inner-box').stop(true).animate({ left: -index * 1200 }, function() {
-        //         if (index === 3) {
-        //             index = 0;
-        //             $('.inner-box').css('left', 0);
-        //         }
+        //         //自增
+        //         index++;
+        //         //边界判断
+        //         index = index > 2 ? 0 : index;
+        //         //让里面的inner-box运动
+        //         $('.inner-box').animate({
+        //             top: -index * 500
+        //         })
         //     })
-        // })
+        //左右滑动
+    var index = 0;
+    $('.change').click(function() {
+        //自增
+        index++;
+        //边界判断
+        // index = index > 3 ? 0 : index;
+        //让里面的inner-box运动
+        $('.inner-box').stop(true).animate({ left: -index * 1200 }, function() {
+            if (index > 2) {
+                index = 0;
+                $('.inner-box').css('left', 0);
+            }
+        })
+    })
 })
