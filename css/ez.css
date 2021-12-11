@@ -1,4 +1,231 @@
+/*2.===================================乐购・图书折购区 ===========================*/
+
+.recommend {
+    height: 544px;
+}
+
+
+/*标题*/
+
+.recommend .title {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 6px solid #ff6700;
+    background-color: #fff;
+    color: #ff6700;
+    font-size: 20px;
+    text-indent: 20px;
+}
+
+
+/* 推荐内容 */
+
+.recommend .recommend-content {
+    width: 1200px;
+    height: 498px;
+    margin: 0 auto;
+}
+
+
+/* 列表容器 */
+
+.recommend .recommend-content ul {
+    width: 1200px;
+    height: 498px;
+    margin: 0 auto;
+}
+
+
+/* 推荐列表li */
+
+.recommend .recommend-content ul li {
+    width: 230px;
+    height: 247px;
+    background-color: #fff;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+
+/* 整体居中 */
+
+.recommend .recommend-content ul li {
+    text-align: center;
+}
+
+
+/* p标签样式 */
+
+.recommend .recommend-content ul li p {
+    text-align: left;
+    text-indent: 10px;
+    font-size: 14px;
+}
+
+
+/* 限时 */
+
+.recommend .recommend-content ul li p.limit-time {
+    text-align: left;
+    text-indent: 0;
+}
+
+.recommend .recommend-content ul li p.text {
+    color: red;
+}
+
+
+/* 价格 */
+
+.recommend .recommend-content ul li p.price {
+    color: red;
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 100;
+}
+
+.recommend .recommend-content ul li p.price span {
+    color: #ccc !important;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+
+/*5.===================================新书上架 ===========================================*/
+
+.ebooks {
+    height: 496px;
+}
+
+
+/* 左侧盒子 */
+
+.ebooks .left-box {
+    width: 900px;
+    height: 496px;
+}
+
+
+/* 顶部 */
+
+.ebooks .left-box .top {
+    width: 906px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border-bottom: 6px solid #ff6700;
+}
+
+
+/* 标题 */
+
+.ebooks .left-box .top .title {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 6px solid #ff6700;
+    background-color: #fff;
+    color: #ff6700;
+    font-size: 20px;
+    text-indent: 20px;
+}
+
+.ebooks .left-box .content .ebooks-list .eb-list {
+    width: 900px;
+    height: 440px;
+    border: 2px solid #ccc;
+}
+
+.ebooks .left-box .content .ebooks-list .eb-list p {
+    width: 180px;
+    height: 220px;
+    float: left;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.ebooks .left-box .content .ebooks-list .eb-list p img {
+    width: 70% !important;
+    height: 60% !important;
+}
+
+.ebooks .left-box .content .ebooks-list .eb-list span {
+    margin-left: 20px !important;
+}
+
+.ebooks .left-box .content .ebooks-list .eb-list p span:last-child {
+    color: red;
+}
+
+.ebooks .left-box .content .ebooks-list .eb-list p .ccc {
+    color: #ccc;
+}
+
+.ebooks .left-box .content .ebooks-list .eb-list p .yj {
+    color: #ccc !important;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+
+/* 右侧盒子 */
+
+.ebooks .right-box {
+    width: 286px;
+    height: 450px;
+    margin-top: 42px;
+    margin-left: 10px;
+    border: 2px solid #ccc;
+    /* 变为怪异盒子 */
+    box-sizing: border-box;
+}
+
+.ebooks .right-box .title {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: 200;
+    color: #333;
+}
+
+.ebooks .right-box ul li {
+    line-height: 42px;
+    font-size: 16px;
+    text-indent: 5px;
+}
+
+.ebooks .right-box ul li p:nth-child(1) {
+    border-top: 1px solid #ccc;
+}
+
+.ebooks .right-box ul li .desc {
+    font-size: 15px;
+    line-height: 20px;
+    height: 150px;
+    color: #333;
+    /* 隐藏 详情默认所有都是隐藏的，只有第一个显示*/
+    display: none;
+}
+
+.ebooks .right-box ul li .desc img {
+    margin-right: 9px;
+}
+
+.ebooks .right-box ul li:first-child p:nth-child(1) {
+    display: none;
+}
+
+.ebooks .right-box ul li:first-child .desc {
+    /* 默认第一个详情显示 */
+    display: block;
+}
+
+
+/*=========================================独家提供==================================*/
+
 .ez {
+    margin-top: 40px;
     height: 546px;
     margin: 50px, auto;
 }
@@ -42,7 +269,6 @@
     width: 200px;
     height: 220px;
     float: left;
-    border: 1px solid #333;
     box-sizing: border-box;
     text-align: left;
     font-size: 16px;
@@ -65,4 +291,74 @@
     color: #ccc !important;
     text-decoration: line-through;
     font-size: 12px;
+}
+
+.guess-you-like {
+    height: 500px;
+}
+
+.guess-you-like-title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    color: #ff6700;
+    border-bottom: 6px solid #ff6700;
+    background-color: #fff;
+    text-indent: 20px;
+}
+
+.guess-you-like-title h1 {
+    font-weight: 500px;
+}
+
+.guess-you-like-content {
+    width: 1200px;
+    height: 500px;
+}
+
+
+/* 上下滑动*/
+
+.out-box {
+    overflow: hidden;
+}
+
+.inner-box {
+    height: 1500px;
+    position: relative;
+    top: 0;
+}
+
+.inner-box li {
+    margin-top: 30px;
+}
+
+
+/*左右滑动的版本
+
+.out-box {
+    overflow: hidden;
+}
+
+.inner-box {
+    width: 4800px;
+    position: relative;
+    left: 0;
+}*/
+
+.guess-you-like-content li {
+    float: left;
+}
+
+.guess-you-like-content .renwen {
+    height: 90px;
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+}
+
+.renwen ul li img {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 175px;
+    height: 90px;
 }

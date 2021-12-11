@@ -81,8 +81,17 @@ $(function() {
             controlsColor: "#d7d7d7", //普通控制按钮的颜色
             controlsCurrentColor: "#ff6600", //当前控制按钮的颜色
         })
-        /*电子书 tab切换*/
-    $('.ebooks .top li').mouseenter(function() {
+        /*电子书 tab切换
+$('.ebooks .top li').mouseenter(function() {
+        //导航高亮颜色切换
+        $(this).addClass('active').siblings('li').removeClass('active')
+            //获取index
+        var index = $(this).index();
+        //内容切换
+        $('ebooks-list').eq(index).show().siblings('.ebooks-list').hide();
+    })*/
+        /*服装 tab切换*/
+    $('.floorBox ul li').mouseenter(function() {
             //导航高亮颜色切换
             $(this).addClass('active').siblings('li').removeClass('active')
                 //获取index

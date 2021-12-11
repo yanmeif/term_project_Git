@@ -21,11 +21,40 @@ $(function() {
     $('.ez-banner:gt(0)').hide();
     //给tab绑定点击事件
     $('.ez-title ul li').on('mouseenter', function() {
-        //导航切换效果
-        $(this).addClass('active').siblings('li').removeClass('active')
-            //获取索引
-        var index = $(this).index();
-        //显示对应的内容
-        $('.ez-banner').eq(index).show().siblings().hide()
-    })
+            //导航切换效果
+            $(this).addClass('active').siblings('li').removeClass('active')
+                //获取索引
+            var index = $(this).index();
+            //显示对应的内容
+            $('.ez-banner').eq(index).show().siblings().hide()
+        })
+        /*换一批 */
+        //定一个索引
+        //上下滑动
+    var index = 0;
+    $('.change').click(function() {
+            //自增
+            index++;
+            //边界判断
+            index = index > 2 ? 0 : index;
+            //让里面的inner-box运动
+            $('.inner-box').animate({
+                top: -index * 500
+            })
+        })
+        //     //左右滑动
+        // var index = 0;
+        // $('.change').click(function() {
+        //     //自增
+        //     index++;
+        //     //边界判断
+        //     // index = index > 3 ? 0 : index;
+        //     //让里面的inner-box运动
+        //     $('.inner-box').stop(true).animate({ left: -index * 1200 }, function() {
+        //         if (index === 3) {
+        //             index = 0;
+        //             $('.inner-box').css('left', 0);
+        //         }
+        //     })
+        // })
 })
